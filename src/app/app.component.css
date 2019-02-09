@@ -1,0 +1,34 @@
+#main {
+    margin-left: 5px;
+}
+
+#tagInput {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%
+}
+
+.badge {
+    min-width: 40px;
+    width: auto;
+    margin: 2px;
+    font-size: 100%;
+    font-weight: normal
+}
+
+#badge-btn {
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 1;
+    text-shadow: none;
+    margin-bottom: 3px; 
+}
+
+.modal-content {
+    padding: 5px
+}
