@@ -23,7 +23,10 @@ export class AppComponent {
 
   addTags() {
     var tags = this.filterNumeric(this.tagsForm.value.replace(/[^\S\n]/g, '').split(this.separators));
-    if (tags.length > 0) {
+    if (tags.length > 0 && !this.displayedTags.length) {
+      localStorage.setItem('tags', tags.join());
+      this.displayedTags = localStorage.getItem('tags').split(',');
+    } else if (tags.length > 0 && this.displayedTags.length > 0) {
       localStorage.setItem('tags', this.displayedTags.join() + ',' + tags.join());
       this.displayedTags = localStorage.getItem('tags').split(',');
     }
